@@ -27,7 +27,7 @@
 	<link rel="shortcut icon" href="favicon.ico">
 
 	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,300' rel='stylesheet' type='text/css'>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="css/animate.css">
 	<!-- Icomoon Icon Fonts-->
@@ -222,7 +222,7 @@
 							<div class="slider">
 								<div class="slide" style="background-image: url(./images/blog.PNG);"></div>
 								<div class="slide" style="background-image: url(./images/chkmain.png);"></div>
-								<div class="slide" style="background-image: url(./images/blog.png);"></div>
+								<div class="slide" style="background-image: url(./images/c.png);"></div>
 								<a class="prev" onclick="button_click(-1)" style="color:black; font-size:30px"><strong><</strong></a>
 								<a class="next" onclick="button_click(1)"style="color:black; font-size:30px"><strong>></strong></a>
 							</div>
@@ -252,13 +252,13 @@
 						</div>
 						<div class="modal-body">
 							<!-- <img src="images/iot/iott.png" class="img-responsive"> -->
-							<div class="slider">
+							<!-- <div class="slider">
 								<div class="slide" style="background-image: url(./images/qpet/qpetma.PNG);"></div>
 								<div class="slide" style="background-image: url(./images/qpet/qpetma2.PNG);"></div>
 								<div class="slide" style="background-image: url(./images/qpet/han.PNG);"></div>
 								<a class="prev" onclick="button_click(-1)" style="color:black; font-size:30px"><strong><</strong></a>
 								<a class="next" onclick="button_click(1)"style="color:black; font-size:30px"><strong>></strong></a>
-							</div>
+							</div> -->
 							<div class="col-md-6"><br>
 								<h4><strong>Skills</strong><br><br>Android Java</h4>
 							</div>
@@ -285,13 +285,13 @@
 						</div>
 						<div class="modal-body">
 							<!-- <img src="images/iot/iott.png" class="img-responsive"> -->
-							<div class="slider">
+							<!-- <div class="slider">
 								<div class="slide2" style="background-image: url(./images/pd/chkma.PNG);"></div>
 								<div class="slide2" style="background-image: url(./images/pd/chkma2.PNG);"></div>
 								<div class="slide2" style="background-image: url(./images/chkmain.png);"></div>
 								<a class="prev" onclick="button_click(-1)" style="color:black; font-size:30px"><strong><</strong></a>
 								<a class="next" onclick="button_click(1)"style="color:black; font-size:30px"><strong>></strong></a>
-							</div>
+							</div> -->
 							<div class="col-md-6"><br>
 								<h4><strong>Skills</strong><br><br>Html, PHP, Css, Javascript, C</h4>
 							</div>
@@ -318,13 +318,13 @@
 						</div>
 						<div class="modal-body">
 							<!-- <img src="images/iot/iott.png" class="img-responsive"> -->
-							<div class="slider">
+							<!-- <div class="slider">
 								<div class="slide" style="background-image: url(./images/pd/pdma.PNG);"></div>
 								<div class="slide" style="background-image: url(./images/pd/pdma2.PNG);"></div>
 								<div class="slide" style="background-image: url(./images/pd/pdmem.PNG);"></div>
 								<a class="prev" onclick="button_click(-1)" style="color:black; font-size:30px"><strong><</strong></a>
 								<a class="next" onclick="button_click(1)"style="color:black; font-size:30px"><strong>></strong></a>
-							</div>
+							</div> -->
 							<div class="col-md-6"><br>
 								<h4><strong>Skills</strong><br><br>Html, Java, Css, Javascript</h4>
 							</div>
@@ -376,86 +376,9 @@
 		</div>
 	</div>
 	<script>
-	//슬라이드
-	let currSlide = 1;
-	showSlide(currSlide);
 
-	function button_click(num) {
-		showSlide((currSlide += num));
-	}
-
-	function showSlide(num) {
-		const slides = document.querySelectorAll(".slide");
-		if (num > slides.length) {
-			currSlide = 1;
-		}
-		if (num < 1) {
-			currSlide = slides.length;
-		}
-		for (let i = 0; i < slides.length; i++) {
-			slides[i].style.display = "none";
-		}
-		slides[currSlide - 1].style.display = "block";
-
-		const slides2 = document.querySelectorAll(".slide2");
-		if (num > slides2.length) {
-			currSlide = 1;
-		}
-		if (num < 1) {
-			currSlide = slides2.length;
-		}
-		for (let i = 0; i < slides2.length; i++) {
-			slides2[i].style.display = "none";
-		}
-		slides2[currSlide - 1].style.display = "block";
-	}
-
-//클릭시 자동스크롤
-		Query(document).ready(function($) {
-
-			$(".scroll").click(function(event) {
-				event.preventDefault();
-				$('html,body').animate({
-					scrollTop: $(this.hash).offset().top
-				}, 500);
-			});
-		});
-
-		Query(document).ready(function($) {
-
-			$(".scroll2").click(function(event) {
-				event.preventDefault();
-				$('html,body').animate({
-					scrollTop: $(this.hash).offset().top
-				}, 500);
-			});
-		});
-
-		Query(document).ready(function($) {
-
-			$(".scroll3").click(function(event) {
-				event.preventDefault();
-				$('html,body').animate({
-					scrollTop: $(this.hash).offset().top
-				}, 500);
-			});
-		});
-
-		Query(document).ready(function($) {
-
-			$(".scroll4").click(function(event) {
-				event.preventDefault();
-				$('html,body').animate({
-					scrollTop: $(this.hash).offset().top
-				}, 500);
-			});
-		});
-		$(".hover").mouseleave(
-			function() {
-				$(this).removeClass("hover");
-			}
-		);
 	</script>
+	<script src="js/slidehover.js"></script>
 	<script src="js/jquery.min.js"></script>
 	<!-- jQuery Easing -->
 	<script src="js/jquery.easing.1.3.js"></script>
