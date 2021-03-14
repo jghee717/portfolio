@@ -21,6 +21,8 @@ function showSlide(num) {
 
 }
 
+
+
 //클릭시 자동스크롤
   Query(document).ready(function($) {
 
