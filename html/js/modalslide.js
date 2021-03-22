@@ -1,26 +1,22 @@
 var $careNum = 0;
-var $theSizeiot = 6;
-var $theSize = 6;
+var $theSize = 3;
 
-
-//iot
 $(".menu-left ul").hide();
 $(".menu-left ul").eq(0).show();
 $(".menu-left .prev").click(function() {
   $careNum--;
-  if ($careNum < 0) $careNum = $theSizeiot - 1;
+  if ($careNum < 0) $careNum = $theSize - 1;
   $(".menu-left ul").hide();
   $(".menu-left ul").eq($careNum).show();
 });
 
 $(".control .next").click(function() {
   $careNum++;
-  if ($careNum >= $theSizeiot) $careNum = 0;
+  if ($careNum >= $theSize) $careNum = 0;
   $(this).parent().children("ul");
   $(".menu-left ul").hide();
   $(".menu-left ul").eq($careNum).show();
 });
-
 
 //qpet
 $(".menu-left2 ul").hide();
