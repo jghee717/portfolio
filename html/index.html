@@ -212,7 +212,7 @@
 
 			<!-- iot모달 -->
 			<div id="myModal" class="modal fade" role="dialog">
-				<div class="modal-dialog" style="max-width: 100%; width: 850px; display: table;">
+				<div class="modal-dialog" style="display: table;">
 					<!-- Modal content-->
 					<div class="modal-content">
 						<div class="modal-header">
@@ -223,13 +223,13 @@
 							<!-- <img src="images/iot/iott.png" class="img-responsive"> -->
 							<div class="menu-left">
 								<ul>
-									<li><img src="images/iot/iott.png" alt="" style="width:800px; height:400px"/></li>
+									<li><img src="images/iot/iott.png" alt="" style="max-width: 100%; width:800px; height:400px"/></li>
 								</ul>
 								<ul>
-									<li><img src="images/iot/iotmeexcel.png" alt="" style="width:800px; height:400px"/></li>
+									<li><img src="images/iot/iotmeexcel.png" alt="" style="max-width: 100%; width:800px; height:400px"/></li>
 								</ul>
 								<ul>
-									<li><img src="images/iot/iotpv.png" alt="" style="width:800px; height:400px"/></li>
+									<li><img src="images/iot/iotpv.png" alt="" style="max-width: 100%; width:800px; height:400px"/></li>
 								</ul>
 								<div class="control">
 									<a class="prev" style="color:black; font-size:30px"><strong>
@@ -245,7 +245,7 @@
 							</div>
 						</div>
 
-						<div class="modal-footer">
+						<div class="modal-footer" style="text-align:center">
 							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 						</div>
 					</div>
@@ -254,7 +254,7 @@
 
 			<!-- 큐펫톡모달 -->
 			<div id="myModal2" class="modal fade" role="dialog" >
-				<div class="modal-dialog" style=" width:100%;width: 850px; display: table;">
+				<div class="modal-dialog" style="display: table;">
 					<!-- Modal content-->
 					<div class="modal-content">
 						<div class="modal-header">
@@ -295,7 +295,7 @@
 
 			<!-- chkheat모달 -->
 			<div id="myModal3" class="modal" role="dialog">
-				<div class="modal-dialog" style="width:850px; display: table;">
+				<div class="modal-dialog" style="display: table;">
 					<!-- Modal content-->
 					<div class="modal-content">
 						<div class="modal-header">
@@ -336,7 +336,7 @@
 
 			<!-- product order모달 -->
 			<div id="myModal4" class="modal fade" role="dialog">
-				<div class="modal-dialog" style="max-width: 100%; width:850px; display: table;">
+				<div class="modal-dialog" style="display: table;">
 					<!-- Modal content-->
 					<div class="modal-content">
 						<div class="modal-header">
@@ -346,7 +346,7 @@
 						<div class="modal-body">
 							<div class="menu-left4">
 								<ul>
-									<li><img src="images/pd/pdup.PNG" alt="" style="width:800px; height:400px"/></li>
+									<li><img src="images/pd/pdup.PNG" alt="" style="max-width: 100%; width:800px; height:400px"/></li>
 								</ul>
 								<ul>
 									<li><img src="images/pd/pdpro.PNG" alt="" style="width:800px; height:400px"/></li>
@@ -445,6 +445,17 @@
 		}
 		img{
 			text-align: center;
+			max-width:100% !important;;
+		}
+		.modal-dialog{
+			max-width: 860px;
+			width:100%;
+		}
+		.modal-footer{
+			text-align: center;
+		}
+		.control, .control2, .control3, .control4{
+			height: auto;
 		}
 	</style>
 </body>

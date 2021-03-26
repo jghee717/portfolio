@@ -1,16 +1,19 @@
 .slider {
+  max-width: 100%;
   width: 900px;
   height: 450px;
   position: relative;
 }
 
 .slide {
+  max-width: 100%;
   width: 900px;
   height: 450px;
   background-size: cover;
   border-radius: 10px;
   animation: fade 1.5s;
   display: none;
+
 }
 
 .prev,
